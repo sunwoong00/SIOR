@@ -15,14 +15,19 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 80px;
     background-color: #ffffff;
+    padding: 0 40px;
+}
+
+nav .logo-link {
+    display: flex;
+    align-items: center;
 }
 
 nav .logo {
     height: 60px;
-    margin-right: auto;
-    margin-left: 40px;
 }
 
 nav ul {
@@ -31,16 +36,41 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
 }
 
 nav ul li {
     margin: 0 15px;
+    position: relative; /* Add this line */
 }
 
 nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
 }
 
 section {
