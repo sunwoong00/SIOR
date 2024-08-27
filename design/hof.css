@@ -2,20 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbit:wght@400&display=swap');
 
 :root {
-    --primary-color: #0056b3; /* main.css와 동일 */
-    --secondary-color: #e0f7fa; /* main.css와 동일 */
-    --accent-color: #80deea; /* main.css와 동일 */
-    --background-color: #f9f9f9; /* main.css와 동일 */
-    --text-color: #333333; /* main.css와 동일 */
-    --white-color: #ffffff; /* main.css와 동일 */
-    --lightgray-color: #f2f2f2; /* main.css와 동일 */
-    --shadow-color: rgba(0, 0, 0, 0.1); /* main.css와 동일 */
-    --hover-bg-color: rgba(255, 255, 255, 0.2); /* main.css와 동일 */
-    --dropdown-bg-color: #f9f9f9; /* main.css와 동일 */
-    --dropdown-hover-bg-color: #f1f1f1; /* main.css와 동일 */
-    --footer-bg-color: #333333; /* main.css와 동일 */
-    --footer-border-color: #eaeaea; /* main.css와 동일 */
-    --link-hover-transform: scale(1.2); /* main.css와 동일 */
+    --primary-color: #0056b3;
+    /* main.css와 동일 */
+    --secondary-color: #e0f7fa;
+    /* main.css와 동일 */
+    --accent-color: #80deea;
+    /* main.css와 동일 */
+    --background-color: #f9f9f9;
+    /* main.css와 동일 */
+    --text-color: #333333;
+    /* main.css와 동일 */
+    --white-color: #ffffff;
+    /* main.css와 동일 */
+    --lightgray-color: #f2f2f2;
+    /* main.css와 동일 */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    /* main.css와 동일 */
+    --hover-bg-color: rgba(255, 255, 255, 0.2);
+    /* main.css와 동일 */
+    --dropdown-bg-color: #f9f9f9;
+    /* main.css와 동일 */
+    --dropdown-hover-bg-color: #f1f1f1;
+    /* main.css와 동일 */
+    --footer-bg-color: #333333;
+    /* main.css와 동일 */
+    --footer-border-color: #eaeaea;
+    /* main.css와 동일 */
+    --link-hover-transform: scale(1.2);
+    /* main.css와 동일 */
 }
 
 /* 기본 설정 */
@@ -40,8 +54,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px; /* main.css와 동일한 높이 */
-    padding: 0 40px; /* main.css와 동일한 패딩 값 */
+    height: 80px;
+    /* main.css와 동일한 높이 */
+    padding: 0 40px;
+    /* main.css와 동일한 패딩 값 */
 }
 
 nav .logo-link {
@@ -50,7 +66,8 @@ nav .logo-link {
 }
 
 nav .logo {
-    height: 50px; /* main.css와 동일한 로고 높이 */
+    height: 50px;
+    /* main.css와 동일한 로고 높이 */
 }
 
 nav ul {
@@ -135,23 +152,32 @@ section#hof p {
     margin: 20px auto;
 }
 
-/* 카드 스타일 */
+/* hof-container 스타일 수정 */
 .hof-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    /* 중앙 정렬 */
     justify-content: center;
+    /* 수직 중앙 정렬 */
+    height: 100%;
 }
 
+/* hof-item 스타일 수정 */
 .hof-item {
-    background-color: var(--lightgray-color);
-    color: black;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px var(--shadow-color);
-    width: 100%;
-    max-width: 300px;
+    margin: 10px 0;
+    /* 각 항목 간의 간격을 추가 */
     text-align: center;
+    /* 텍스트 중앙 정렬 */
+    width: 80%;
+    /* 항목 너비 조정 (필요에 따라 조정 가능) */
+    padding: 15px;
+    background-color: #f4f4f4;
+    /* 배경색 추가 (선택 사항) */
+    border-radius: 10px;
+    /* 모서리를 둥글게 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 그림자 효과 추가 (선택 사항) */
 }
 
 /* 연락처 섹션 스타일 */
