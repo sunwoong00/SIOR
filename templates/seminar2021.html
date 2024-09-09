@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세미나 목록</title>
+    <link rel="stylesheet" href="../design/seminar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html" class="logo-link">
+                <img src="../images/Sior_logo.jpg" alt="Sior Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="intro.html">소개</a></li>
+                <li><a href="hof.html">명예의 전당</a></li>
+                <li class="dropdown">
+                    <a href="seminar.html" class="dropbtn">세미나 ▼</a>
+                    <div class="dropdown-content">
+                        <a href="seminar2024.html">2024</a>
+                        <a href="seminar2023.html">2023</a>
+                        <a href="seminar2022.html">2022</a>
+                        <a href="seminar2021.html">2021</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="exhibition.html" class="dropbtn">전시회 ▼</a>
+                    <div class="dropdown-content">
+                        <a href="exhibition2024.html">2024</a>
+                        <a href="exhibition2023.html">2023</a>
+                        <a href="exhibition2022.html">2022</a>
+                        <a href="exhibition2021.html">2021</a>
+                    </div>
+                </li>
+                <li><a href="galary.html">갤러리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="seminar-list">
+        <img src="../images/seminar2021_banner.jpg" alt="배너 이미지" style="width: 100%; max-height: 200px; object-fit: cover;">
+        <h2>세미나 목록</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td><a href="./page_list/seminar2022_6.html">아두이노 금고</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.27</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="./page_list/seminar2022_5.html">라인 트레이서</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.27</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="./page_list/seminar2022_4.html">라인 트레이서</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.27</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="./page_list/seminar2022_3.html">넌 나만 바라봐, 선풍기</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.27</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="./page_list/seminar2022_2.html">미로찾기</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="./page_list/seminar2022_1.html">IOT 조명 제어</a></td>
+                    <td>SIOR</td>
+                    <td>2021.04.23</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="copyright">
+        <p>&copy; Copyright 2020-2022. Sungkyunkwan Institute of Robotics. All rights reserved.<br>
+            Since 1985, Powered by SKKU</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/SKKUSIOR" target="_blank">
+                <img src="../images/Facebook_logo_symbol_RGB.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/skku_sior" target="_blank">
+                <img src="../images/Instagram_Glyph_Gradient.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/channel/UC_ffUA9hqnBd3h0tZ1_FfHg" target="_blank">
+                <img src="../images/Youtube_logo.png" alt="YouTube">
+            </a>
+        </div>
+    </section>
+    <script>
+        // 타이핑 애니메이션이 완료된 후 커서 제거
+        document.addEventListener('DOMContentLoaded', () => {
+            const typingEffect = document.querySelector('.typing-effect');
+            typingEffect.addEventListener('animationend', () => {
+                // 애니메이션이 끝난 후 클래스 추가
+                typingEffect.classList.add('finished');
+            });
+        });
+    </script>
+
+</body>
+</html>
