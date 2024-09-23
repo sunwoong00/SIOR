@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit:wght@400&display=swap');
+
+:root {
+    --primary-color: #0056b3;
+    /* main.css와 동일 */
+    --secondary-color: #e0f7fa;
+    /* main.css와 동일 */
+    --accent-color: #80deea;
+    /* main.css와 동일 */
+    --background-color: #f9f9f9;
+    /* main.css와 동일 */
+    --text-color: #333333;
+    /* main.css와 동일 */
+    --white-color: #ffffff;
+    /* main.css와 동일 */
+    --lightgray-color: #f2f2f2;
+    /* main.css와 동일 */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    /* main.css와 동일 */
+    --hover-bg-color: rgba(255, 255, 255, 0.2);
+    /* main.css와 동일 */
+    --dropdown-bg-color: #f9f9f9;
+    /* main.css와 동일 */
+    --dropdown-hover-bg-color: #f1f1f1;
+    /* main.css와 동일 */
+    --footer-bg-color: #333333;
+    /* main.css와 동일 */
+    --footer-border-color: #eaeaea;
+    /* main.css와 동일 */
+    --link-hover-transform: scale(1.2);
+    /* main.css와 동일 */
+}
+
+/* 기본 설정 */
+body {
+    font-family: 'Orbit', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* main.css와 동일한 높이 */
+    padding: 0 40px;
+    /* main.css와 동일한 패딩 값 */
+}
+
+nav .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    height: 50px;
+    /* main.css와 동일한 로고 높이 */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-bg-color);
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-bg-color);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px var(--shadow-color);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: var(--dropdown-hover-bg-color);
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* 섹션 스타일 */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+section#hof {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section#hof h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+section#hof p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* hof-container 스타일 수정 */
+.hof-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 중앙 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    height: 100%;
+}
+
+/* hof-item 스타일 수정 */
+.hof-item {
+    margin: 10px 0;
+    /* 각 항목 간의 간격을 추가 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    width: 80%;
+    /* 항목 너비 조정 (필요에 따라 조정 가능) */
+    padding: 15px;
+    background-color: #f4f4f4;
+    /* 배경색 추가 (선택 사항) */
+    border-radius: 10px;
+    /* 모서리를 둥글게 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 그림자 효과 추가 (선택 사항) */
+}
+
+/* 연락처 섹션 스타일 */
+section#contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* 소셜 링크 스타일 */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: var(--link-hover-transform);
+}
+
+/* 저작권 섹션 스타일 */
+#copyright {
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--white-color);
+    border-top: 1px solid var(--footer-border-color);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+}
