@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>전시회 - Sior</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../design/main.css">
-    <link rel="icon" href="../images/favicon.ico">
+    <title>전시회 - Sior</title>
+    <link rel="stylesheet" href="../design/exhibition.css">
 </head>
 
 <body>
@@ -42,11 +41,40 @@
         </nav>
     </header>
 
-    <section id="intro">
-        <h1>전시회2023</h1>
-        <p>111</p>
+    <section id="exhibition-list">
+        <h2>전시회 목록</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td><a href="./page_list/seminar2024_4.html">블루투스 통신을 이용하여 서보모터 제어, LCD 화면 띄우기(세미나 4주차)</a></td>
+                    <td>2023.07.10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="./page_list/seminar2024_3.html">가변저항과 초음파센서를 이용한 DC모터 제어(세미나 3주차)</a></td>
+                    <td>2023.07.10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="./page_list/seminar2024_2.html">스위치와 저항을 이용한 기초회로 실습(세미나 2주차)</a></td>
+                    <td>2023.07.10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="./page_list/seminar2024_1.html">스마트폰으로 원격 조종하는 RC카 제작(세미나 1주차)</a></td>
+                    <td>2023.07.10</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-
     <section id="copyright">
         <p>&copy; Copyright 2020-2022. Sungkyunkwan Institute of Robotics. All rights reserved.<br>
             Since 1985, Powered by SKKU</p>
@@ -62,6 +90,16 @@
             </a>
         </div>
     </section>
+    <script>
+        // 타이핑 애니메이션이 완료된 후 커서 제거
+        document.addEventListener('DOMContentLoaded', () => {
+            const typingEffect = document.querySelector('.typing-effect');
+            typingEffect.addEventListener('animationend', () => {
+                // 애니메이션이 끝난 후 클래스 추가
+                typingEffect.classList.add('finished');
+            });
+        });
+    </script>
 </body>
 
 </html>
